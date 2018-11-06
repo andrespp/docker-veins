@@ -1,0 +1,7 @@
+data/
+.config/
+.ipynb_checkpoints/
+.ipython/
+.jupyter/
+.local/
+omnetpp-5.3-src-linux.tgz
