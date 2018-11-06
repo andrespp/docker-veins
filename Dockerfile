@@ -47,7 +47,11 @@ RUN export PATH=$PATH:/root/omnetpp-5.3/bin && \
 	make
 
 # Build and Install Veins
-#RUN wget https://veins.car2x.org/download/veins-4.7.1.zip
+RUN apt-get install -y unzip
+
+RUN cd /root && wget https://veins.car2x.org/download/veins-4.7.1.zip && \
+	unzip veins-4.7.1.zip && \
+	rm veins-4.7.1.zip
 
 COPY ./entrypoint.sh /
 
