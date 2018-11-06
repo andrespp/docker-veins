@@ -3,9 +3,11 @@ docker-veins
 
 Docker image for [Veins Simulator](https://veins.car2x.org/)
 
+## Introduction
+
 Veins is an open source framework for running vehicular network simulations.
 
-It is based on two well-established simulators: OMNeT++, an event-based network simulator, and SUMO, a road traffic simulator.
+It is based on two well-established simulators: [OMNeT++](https://www.omnetpp.org/), an event-based network simulator, and [SUMO](http://sumo.dlr.de/index.html), a road traffic simulator.
 
 It extends these to offer a comprehensive suite of models for IVC simulation.
 
@@ -14,7 +16,7 @@ It extends these to offer a comprehensive suite of models for IVC simulation.
 ### Clone the repository
 
 ```console
-$ git clone ...
+$ git clone https://github.com/andrespp/docker-veins.git
 ```
 
 ### Download OMNeT++
@@ -39,7 +41,7 @@ $ make setup
 ### Run
 
 ```console
-$ docker run -it --rm veins bash
+$ make run-bash
 $ /entrypoint.sh omnet
 ```
 
